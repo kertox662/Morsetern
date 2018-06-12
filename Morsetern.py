@@ -22,7 +22,6 @@ def ternToWord(tern):
         except Exception as e:
             word[i] = ''
     word = "".join(word)
-    print(word)
     return word
 
 def ternToDec(tern):
