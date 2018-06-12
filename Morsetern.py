@@ -100,7 +100,7 @@ while True:
         print(encodeSentence(sentence))
     elif process in ["decode", "Decode"]:
         sentence = input("Type the sentence to decode:")
-        print(encodeSentence(sentence))
+        print(decodeSentence(sentence))
     
     else:
         print("Could not recognize process, try again.")
