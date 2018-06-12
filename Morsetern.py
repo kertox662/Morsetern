@@ -93,7 +93,16 @@ def decodeSentence(code):
     return sentence
 
 
-sentence = "Hello there world"
-code = encodeSentence(sentence)
-print(code)
-print(decodeSentence(code))
+while True:
+    process = input("Encode or Decode?")
+    if process in ["encode", "Encode"]:
+        sentence = input("Type the sentence to encode:")
+        print(encodeSentence(sentence))
+    elif process in ["decode", "Decode"]:
+        sentence = input("Type the sentence to decode:")
+        print(encodeSentence(sentence))
+    
+    else:
+        print("Could not recognize process, try again.")
+    
+    print()
