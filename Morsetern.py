@@ -63,6 +63,7 @@ def quadToDec(quad):
 
 def decToQuad(dec):
     ternNum = []
+    dec = int(dec)
     while dec > 0:
         r = dec % 4
         ternNum.append(str(r))
@@ -86,7 +87,7 @@ def decodeSentence(code):
     quad = decToQuad(code)
     words = str(quad).split("3")
     for i in range(len(words)):
-        words[i] = ternToWord(words[i])
+        words[i] = ternToWord(int(words[i]))
     
     sentence = " ".join(words)
 
